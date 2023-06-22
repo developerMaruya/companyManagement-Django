@@ -1,0 +1,20 @@
+<html>
+	<head>
+	<title>student registration  success</title>
+	<meta charset="UTF-8">
+	</head>
+	<body bgcolor="skyblue"><center>
+	<h1><b><u>student registration details</u></b></h1></center>
+	{% for x in studelist %}
+		<h3>student id: {{x.stdid}}<br><br>
+		password:{{x.password}}<br><br>
+		name:{{x.first_name}}  {{x.last_name}}<br><br>
+		address:{{x.address}}<br><br>
+		age:{{x.age}}<br><br>
+		mobile number:{{x.mobile}}<br><br>
+		heigher qualification:{{x.qualification}}<br><br>
+		email id:{{x.email}}<br><br>
+		</h3>
+	{% endfor %}
+	</body>
+</html>

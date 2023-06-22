@@ -1,0 +1,31 @@
+<html>
+<head>
+     <meta charset="UTF-8">
+	   {% load static %}
+       <link rel="stylesheet" type="text/css" href="{% static 'cssfolder/secoundpage.css' %}">
+</head>
+<body bgcolor="skyblue"><center>
+<form action="../supdatecheck/" method="POST">
+{% csrf_token %}
+<table>
+     <tr>
+	    <th colspan=2><h2><u><b>STUDENT  AGE UPDATE</b></u></h2></th>
+	  </tr>
+	  <tr>
+	      <th colspan=2><h2>Welcome:{{studentid}}</h2></th>
+		  </tr>
+		  <tr>
+	      <th>student id:</th>
+		  <th><input type="text" name="sid" required</th>
+	   </tr>
+	   <tr>
+	      <th>age:</th>
+		  <th><input type="text" name="sage" required</th>
+	   </tr>
+	   <tr>
+		  <th colspan=2><input type="submit" name="submit" required</th>
+	   </tr>
+</table>
+</form>
+</body>
+</html>

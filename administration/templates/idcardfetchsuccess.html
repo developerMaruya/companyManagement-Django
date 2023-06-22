@@ -1,0 +1,23 @@
+<html>
+	<head>
+	<title>idcard fetch success</title>
+	<meta charset="UTF-8">
+	</head>
+	<body bgcolor="skyblue"><center>
+	<h1><b><u>idcard details</u></b></h1></center>
+	{% for x in idlist %}
+		<h3>idcard no:{{x.idcard_number}}<br><br>
+		name:{{x.name}}<br><br>
+		father name:{{x.father_name}}<br><br>
+		address: {{x.address}}<br><br>
+		mobile no:{{x.mobile}}<br><br>
+		qualification:{{x.qualification}}<br><br>
+		email id:{{x.email}}<br><br>
+		gender:{{x.gender}}<br><br>
+		age:{{x.age}}<br><br>
+		session:{{x.session}}<br><br>
+		role:{{x.role}}<br><br>
+		</h3>
+	{% endfor %}
+	</body>
+</html>

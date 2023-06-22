@@ -1,0 +1,31 @@
+<html>
+<head>
+     <meta charset="UTF-8">
+	   {% load static %}
+       <link rel="stylesheet" type="text/css" href="{% static 'cssfolder/secoundpage.css' %}">
+</head>
+<body><center>
+<form action="../supdatequalificationcheck/" method="POST">
+{% csrf_token %}
+<table>
+     <tr>
+	    <th colspan=2><h2><b><u>STUDENT  QUALIFICATION UPDATE</u></b></h2></th>
+	  </tr>
+	  <tr>
+	      <th colspan=2><h2>Welcome:{{studentid}}</h2></th>
+		  </tr>
+		  <tr>
+	      <th>student id:</th>
+		  <th><input type="text" name="sid" required</th>
+	   </tr>
+	   <tr>
+	      <th>qualification:</th>
+		  <th><input type="text" name="quli" required</th>
+	   </tr>
+	   <tr>
+		  <th colspan=2><input type="submit" name="submit" required</th>
+	   </tr>
+</table>
+</form>
+</body>
+</html>

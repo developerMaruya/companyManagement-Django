@@ -1,0 +1,31 @@
+<html>
+<head>
+     <meta charset="UTF-8">
+	   {% load static %}
+       <link rel="stylesheet" type="text/css" href="{% static 'cssfolder/secoundpage.css' %}">
+</head>
+<body><center>
+<form action="../eupdateworkrolecheck/" method="POST">
+{% csrf_token %}
+<table>
+     <tr>
+	    <th colspan=2><h2><u><b>EMPLOYEE WORK ROLE UPDATE</b></u></h2></th>
+	  </tr>
+	  <tr>
+	      <th colspan=2><h2>Welcome:{{employeeid}}</h2></th>
+		  </tr>
+		<tr>
+			<th>employee id</th>
+			<th><input type="text" name="eid" required></th>
+		</tr>
+	   <tr>
+	      <th>role:</th>
+		  <th><input type="text" name="erole" required</th>
+	   </tr>
+	   <tr>
+		  <th colspan=2><input type="submit" name="submit" required</th>
+	   </tr>
+</table>
+</form>
+</body>
+</html>

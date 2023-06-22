@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>performance fetch suceess</title>
+ <meta charset="UTF-8">
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/fermormancefetch.css'%}">
+	<link rel="stylesheet" href="{% static 'css/student_index.css' %}">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+		<!---------------- student page navbar----------------->
+<nav class="navbar navbar-expand-lg navbar-inverse ml-0 pl-0 pr-0 mr-0 ">
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+<div class="collapse navbar-collapse" id="navbarNav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WELCOME TO RB GROUP</a>
+    </div>
+    <ul class="nav_u">
+      <li class="active"><a href="{%url 'student:sperformancefetch1' %}">performance_login</a></li>
+	  <li class="active"><a href="{%url 'administration:adminindex' %}">admin page</a></li>
+      <li><a href="{%url 'student:logout' %}">logout</a></li>
+	  <li><a href="{%url 'home:homepage' %}">home</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<!-----------------main body part---------------->
+
+<div class="mains">
+	<div class="heading">
+     <h2> student performance<h2>
+	</div>
+	{% for x in profile %}
+	<div class="stdimage">
+		<img src="{{x.studeimage.url}}" width="200px" height="150px">
+		<br><br><br><br><br>
+	</div>
+	<div class="stdname">
+		Student id : {{x.stdudeid}}<br>
+		Student Name : {{x.name}}<br>
+		father name : {{x.father_name}}<br>
+	</div>
+	{% endfor %}
+</div>	<br><br><br>------------------------------------------
+<br>
+	{% for x in profile %}
+	<div class="sdetails">
+		address:{{x.address}}
+		<br>
+		qualification:{{x.qualification}}
+		<br>
+		age:{{x.age}}
+		<br>
+		mobile:{{x.mobile}}
+		<br>
+		email id:{{x.email}}
+		<br>
+		full marks : {{x.fullmarks}}
+		<br>
+		obtaind marks: {{x.obtaindmarks}}
+		<br>
+		grad : {{x.grad}}
+		<br>
+		percentage: {{x.percentage}} %
+		<br>
+		attendance: {{x.attendance}} %
+		<br>
+		studenttype: {{x.studenttype}}
+		<br>
+		performance: {{x.performance}}
+		<br>
+		{% endfor %}
+	</div>
+</body>
+</html>

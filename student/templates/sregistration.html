@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>registration</title>
+<meta charset="UTF-8">
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/registration.css' %}">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+</head>
+<body>
+<form action="../sregistrationcheck" method="GET">
+<!-----------header------------------------------->
+{% include 'menu.html' %}
+<!--------------main section------------------------>
+<div class="registratin_form">
+<center>
+<form>
+<table border="1">
+    <tr>
+	    <td colspan="2"> STUDENT REGISTRATION FORM</td>
+	</tr>
+	
+	
+	<tr>
+	   <td>FIRST NAME:</td>
+	   <td><input type="text" name="first" required ></td>
+	</tr>
+	<tr>
+	   <td>LAST NAME:</td>
+	   <td><input type="text" name="last" required ></td>
+	</tr>
+	<tr>
+	   <td>ADDRESS:</td>
+	   <td><input type="text" name="address" required  ></td>
+	</tr>
+	<tr>
+	   <td>MOBILE NO:</td>
+	   <td><input type="number" name="mobile" required ></td>
+	</tr>
+	<tr>
+	   <td>QUALIFICATION:</td>
+	   <td><input type="text" name="qualification" required ></td>
+	</tr>
+	<tr>
+	   <td>EMAIL ID:</td>
+	   <td><input type="text" name="email" required ></td>
+	</tr>
+	<tr>
+	   <td>AGE:</td>
+	   <td><input type="text" name="age" required ></td>
+	</tr>
+	<tr>
+	   <td>STD ID:</td>
+	   <td><input type="text" name="id" required ></td>
+	</tr>
+	<tr>
+	   <td>PASSWORD:</td>
+	   <td><input type="password" name="pass" required ></td>
+	</tr>
+	<tr>
+	  <th colspan="2"><input type="submit"  class="btn" name="submit"></th>
+	</tr>
+</table>
+</form>
+</body>
+</html>

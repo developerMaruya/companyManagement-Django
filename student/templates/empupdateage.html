@@ -1,0 +1,26 @@
+<html>
+<head>
+     <meta charset="UTF-8">
+	   {% load static %}
+       <link rel="stylesheet" type="text/css" href="{% static 'cssfolder/secoundpage.css' %}">
+</head>
+<body><center>
+<form action="">
+<table>
+     <tr>
+	    <th colspan=2>EMPLOYEE AGE UPDATE</th>
+	  </tr>
+	  <tr>
+	      <th colspan=2>Welcome:{{employeeid}}</th>
+		  </tr>
+	   <tr>
+	      <th>age:</th>
+		  <th><input type="text" name="eage" required</th>
+	   </tr>
+	   <tr>
+		  <th colspan=2><input type="submit" name="submit" required</th>
+	   </tr>
+</table>
+</form>
+</body>
+</html>

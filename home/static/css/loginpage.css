@@ -1,0 +1,66 @@
+*
+{
+  padding:0;
+  margin:0;
+ }
+ .company_name{
+	 height:19%;
+	 width:100%;
+	 background-color:skyblue;
+ }
+ .company_name .logos{
+	 width:8%;
+	 padding-left:15px;
+	 display:inline-block;
+ }
+ .company_name .logos img{
+	 width:130px;
+	 height:130px;
+ }
+ .company_name .names{
+	 float:right;
+	 text-align:center;
+	 justify-content:center;
+	 color:white;
+	 text-shadow:1px 2px 3px red;
+	 width:88%;
+	 padding-top:30px;
+ }
+  .company_name .names h2{
+	  font-size:45px;
+	  font-weight:bold;
+  }
+	  .marquee1{
+	 color:blue;
+	 background-color:skyblue;
+ }
+
+ /*----------welcome text----------*/
+.welcome
+{
+	padding:50px 100px;
+	margin-top:50px;
+	background-color:gray;
+	box-shadow:0 0 20px 7px rgba(0,0,0,0.2);
+}
+.welcome h1
+{
+	color:green;
+	text-shadow:1px 2px 3px blue;
+	font-weight:bold;
+}
+.container p{
+	font-weight:bold;
+}
+.welcome .home-btn
+{
+	margin-top:10px;
+	padding:10px 30px;
+	border-radius:30px;
+	color:#fff;
+	background-color:#013f7e;
+}
+.welcome .btn:focus
+{
+	box-shadow:none;
+}

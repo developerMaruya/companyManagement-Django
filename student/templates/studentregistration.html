@@ -1,0 +1,66 @@
+<html>
+  <head>
+      <title>student registration form</title>
+	  <meta charset="UTF-8">
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'css/studentregistration.css' %}">
+   </head>
+ <body bgcolor="gray">
+ <form action="" method="get">
+  <div class="studentregistration">
+<center>
+<form>
+<table border="1" width="60%" height="90%" bgcolor="pink">
+    <tr>
+	    <td colspan="2" class="header"><center>STUDENT REGISTRATION FORM</center></td>
+	</tr>
+	
+	
+	<tr>
+	   <td>FIRST NAME:</td>
+	   <td><input type="text" name="first" required ></td>
+	</tr>
+	<tr>
+	   <td>LAST NAME:</td>
+	   <td><input type="text" name="last" required ></td>
+	</tr>
+	<tr>
+	   <td>ADDRESS:</td>
+	   <td><input type="text" name="address" required  ></td>
+	</tr>
+	<tr>
+	   <td>MOBILE NO:</td>
+	   <td><input type="number" name="mobile" required ></td>
+	</tr>
+	<tr>
+	   <td>QUALIFICATION:</td>
+	   <td><input type="text" name="qualification" required ></td>
+	</tr>
+	<tr>
+	   <td>EMAIL ID:</td>
+	   <td><input type="text" name="email" required ></td>
+	</tr>
+	<tr>
+	   <td>AGE:</td>
+	   <td><input type="text" name="age" required ></td>
+	</tr>
+	<tr>
+	   <td>USERID:</td>
+	   <td><input type="text" name="id" required ></td>
+	</tr>
+	<tr>
+	   <td>PASSWORD:</td>
+	   <td><input type="password" name="pass" required ></td>
+	</tr>
+	<tr>
+	     <td>role</td>
+		 <td><input type="text" name="role" required placeholder=" enter student">
+		</tr>
+	<tr>
+	  <th colspan="2"><input type="submit"  class="btn" name="submit"></th>
+	</tr>
+</table>
+</form>
+</body>
+</html>
+   

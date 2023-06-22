@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  {% load static %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    /* company name css */
+	.name{
+	background-color:black;
+	width:100%;
+	height:20%;
+	text-color:white;
+	}
+	.name h1{
+	 color:white;
+	 text-align:center;
+	 margin-top:20px;
+	 padding-top:50px;
+	 }
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+  
+</head>
+<body>
+
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>admin page</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Home</a></li><br>
+       <li class="active"><a href="#section1">logout</a></li><br>
+	   <li class="active"><a href="#section1">enquari data</a></li><br>
+	   <li class="active"><a href="#section1">student fees form</a></li><br>
+	   <li class="active"><a href="#section1">employee selary</a></li><br>
+        
+		 <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">form
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">student form</a></li>
+      <li><a href="#">employee form</a></li>
+      <li><a href="#">admin form</a></li>
+	  <li><a href="#">id generater</a></li>
+    </ul>
+  </div>
+  <br>
+	
+ <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">registration
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">student registration</a></li>
+      <li><a href="#">employee registration</a></li>
+      <li><a href="#">admin registration</a></li>
+    </ul>
+  </div>
+  <br>
+	
+		  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">update
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">student update</a></li>
+      <li><a href="#">employee update</a></li>
+      <li><a href="#">admin update</a></li>
+    </ul>
+  </div>
+  <br>
+  		  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">delete
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">student delete</a></li>
+      <li><a href="#">employee delete</a></li>
+      <li><a href="#">admin delete</a></li>
+    </ul>
+  </div><br>
+  
+  	  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">displaydata
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">student fees</a></li>
+      <li><a href="#">employee selary</a></li>
+      <li><a href="#">idcard data</a></li>
+	  <li><a href="#">student profile</a></li>
+	  <li><a href="#">employee profile</a></li>
+	  <li><a href="#">employee registration</a></li>
+	  <li><a href="#">student registration</a></li>
+    </ul>
+  </div>
+  
+      </ul><br>
+	  
+</body>
+</html>

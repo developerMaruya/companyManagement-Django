@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>employee loginpage</title>
+<meta charset="UTF-8">
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/loginpage.css' %}">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+</head>
+
+<body>
+<form action="../loginemployeecheck1/"  method="POST">
+{% csrf_token %}
+<!--------------------------header------------------------->
+<div class="company_name">
+   <div class="logos">
+   <h2><img src="{% static 'image/rblogo2.png' %}"></h2>
+   </div>
+   <div class="names">
+     <h2> RB GROUP OF INFOTECH Private Limited<h2>
+    </div>
+</div>
+<!--marquee-->
+  </div>
+	   <div class="marquee1">
+	      <marquee direction="left" height="30px" width="100%">
+	     <h4>speaking couse free FOR dca,adca student&nbsp &nbsp &nbsp &nbsp new batch start as-python,php,html &nbsp &nbsp &nbsp &nbsp &nbsp mobile no-7651972737 &nbsp &nbsp whatsapp-8546057014 &nbsp &nbsp email-rbmaurya606@gmail.com &nbsp &nbsp address-bhaisoni sarnath varanasi&nbsp &nbsp &nbsp &nbsp PD CLASS FREE ON PROGRAMING LANGUAGE(PYTHON COURSE) &nbsp &nbsp &nbsp &nbsp &nbsp techer required (mysql) &nbsp &nbsp &nbsp &nbsp new batch stated soon as-ADCA, DCA,MYSQL,WEB DESIGNING </h4>
+		 </marquee>
+	   </div>
+	</div>
+<!--------welcome text----------->
+  <section id="welcome">
+     <div class="container">
+	  <div class="welcome text-center wow slideInLeft">
+	     <h1>WELCOME TO RB GROUP OF INFOTECH Private Limited</h1>
+		
+		 <p>USER ID:&nbsp &nbsp &nbsp <input type="text" name="employeeid" required placeholder=" user id"></p>
+		    <p>PASSWORD:<input type="password" name="employeepass" required placeholder="password"></p>
+		 <button type="submit" class="btn home-btn">LOGIN</button>
+		 
+		 </div>
+	 </div>
+  </section>
+  </form>
+  </body>
+  </html>

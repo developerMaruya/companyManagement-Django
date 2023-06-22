@@ -1,0 +1,55 @@
+*
+{
+  padding:0;
+  margin:0;
+ }
+ .company_name{
+	 height:19%;
+	 width:100%;
+	 background-color:skyblue;
+ }
+ .company_name .logos{
+	 width:8%;
+	 padding-left:15px;
+	 display:inline-block;
+ }
+ .company_name .logos img{
+	 width:130px;
+	 height:130px;
+ }
+ .company_name .names{
+	 float:right;
+	 text-align:center;
+	 justify-content:center;
+	 color:white;
+	 text-shadow:1px 2px 3px red;
+	 width:88%;
+	 padding-top:30px;
+ }
+  .company_name .names h2{
+	  font-size:45px;
+	  font-weight:bold;
+  }
+	  .marquee1{
+	 color:blue;
+	 background-color:skyblue;
+ }
+ #course
+{
+	padding-top:70px;
+	padding-bottom:70px;
+}
+#course .col-md-6
+{
+	padding:20px 10px;
+}
+#course h3
+{
+	margin:15px auto;
+}
+#course .col-md-6 p
+{
+	color:black;
+	size:24px;
+	
+}

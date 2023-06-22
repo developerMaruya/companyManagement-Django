@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   {% load static %}
+      <title>HTML Target Frames</title>
+   </head>
+   
+   <frameset rows="21%,*" color="skyblue">
+      <frame src="companyname.html" name="companyname_page" />
+   <frameset cols = "200, *">
+      <frame src = "dashboard.html" name = "dashboard_page" />
+      <frame src = "main.html" name = "main_page" />
+      
+      <noframes>
+         <body>Your browser does not support frames.</body>
+      </noframes>
+   </frameset>
+	
+</html>

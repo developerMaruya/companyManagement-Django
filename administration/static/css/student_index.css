@@ -1,0 +1,134 @@
+*
+{
+  padding:0;
+  margin:0;
+ }
+ .company_name{
+	 height:21%;
+	 width:100%;
+	 background-color:skyblue;
+ }
+ .company_name .logos{
+	 width:8%;
+	 padding-left:15px;
+	 display:inline-block;
+ }
+ .company_name .logos img{
+	 width:130px;
+	 height:130px;
+ }
+ .company_name .names{
+	 float:right;
+	 text-align:center;
+	 justify-content:center;
+	 color:white;
+	 text-shadow:1px 2px 3px red;
+	 width:88%;
+	 padding-top:30px;
+ }
+  .company_name .names h2{
+	  font-size:30px;
+	  font-weight:bold;
+  }
+	  .marquee1{
+	 color:blue;
+	 background-color:skyblue;
+ }
+ /*----------nav bar-----------*/
+ 
+ .navbar-brand{
+	 color:yellow;
+	 font-weight:bold;
+     margin-left:33px;
+	 padding-left:33px;
+ }
+ .container-fluid{
+     background-color:black;
+	 
+ }
+.container-fluid.nav_u{
+	list-style:none;
+	
+}
+.nav_u li{
+	 list-style:none;
+	 text-decoration:none;
+	 float:left;
+	 padding-right:60px;
+	 margin-right:70px;
+	 text-align:center;
+	  padding-top:15px;
+ }
+ .nav_u li a{
+	 color:#fff;
+	 text-align:center; 
+ }
+ .nav_u li a:hover {
+	 color:yellow;
+	 background-color:green;
+ }
+ .dropdown-menu li a{
+	 color:black;
+ }
+ /*------------main body part----------*/
+ .main{
+	 background-image:url(../image/ofice.png);
+	 width:100%;
+	 height:450px;
+	 background-size:cover;
+ background-position:center;
+ color:white;
+ }
+ .r{
+	 float:right;
+	 background-color:green;
+ }
+ .r h1{
+	 color:red;
+ }
+ 
+     /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    /* company name css */
+	.name{
+	background-color:white;
+	width:100%;
+	height:20%;
+	color:white;
+	}
+	.name h1{
+	 color:white;
+	 text-align:center;
+	 margin-top:20px;
+	 padding-top:50px;
+	 }
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: skyblue;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+	<!--css for main.html-->
+	  .b{
+  background-color:white;
+  }
+  
+  .r h1{
+  text-color:red;
+  color:white;
+  }

@@ -1,0 +1,190 @@
+<html lang="en">
+<head>
+  <title>rbsoftware-administration page</title>
+  <meta charset="utf-8">
+  {% load static %}
+  {% csrf_token %}
+  <link rel="stylesheet" href="{% static 'css/student_index.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    /* company name css */
+	.name{
+	background-color:black;
+	width:100%;
+	height:20%;
+	text-color:white;
+	}
+	.name h1{
+	 color:white;
+	 text-align:center;
+	 margin-top:20px;
+	 padding-top:50px;
+	 }
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+	<!--css for main.html-->
+	  .b{
+  background-color:#b5dcb3;
+  }
+  
+  .r h1{
+  text-color:red;
+  color: white;
+  }
+  .col-sm-9{
+   color:white;
+   }
+   
+  </style>
+  </head>
+<body>
+<div class="company_name">
+   <div class="logos">
+   <h2><img src="{% static 'image/rblogo2.png' %}"></h2>
+   </div>
+   <div class="names">
+     <h2 class="animate__animated animate__heartBeat"> RB PRIVATE LMT<h2>
+    </div>
+</div>
+<!--body designing start-->
+	
+	<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>admin page</h4>
+      <ul class="nav nav-pills nav-stacked">
+	  <li class="active"><a href="{%url 'administration:logout' %}">logout</a></li><br>
+	   <li class="active"><a href="{%url 'home:enquarifetch' %}">enquari data</a></li><br>
+	   <li class="active"><a href="{%url 'administration:employeeselary' %}">employee selary</a></li><br>
+        
+		 <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">form
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="{%url 'administration:studentfees' %}">student fees form</a></li>
+	  <li><a href="{%url 'home:idform' %}">id generater</a></li>
+	  <li><a href="{%url 'administration:employeeprofile' %}">employee profile</a></li>
+	  <li><a href="{%url 'employee:studentprofile' %}">student_profile</a></li>
+      <li><a href="{%url 'employee:sperformance' %}">student_performance</a></li>
+    </ul>
+  </div>
+  <br>
+<!--	
+ <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">registration
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="{%url 'student:sregistration' %}">student registration</a></li>
+      <li><a href="{%url 'employee:eregistration' %}">employee registration</a></li>
+      <li><a href="{%url 'administration:adminregistration' %}">admin registration</a></li>
+    </ul>
+  </div>-->
+	
+		  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">update
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="{%url 'administration:updateemployeeselaryforms' %}">employee selary update</a></li>
+      <li><a href="{%url 'administration:updatestudentfeesforms' %}">student fees update</a></li>
+	  <li><a href="{%url 'home:updateidcardforms' %}">idgenerate update</a></li>
+    </ul>
+  </div>
+  <br>
+  		  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">delete
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="{%url 'administration:deletefees' %}">student fees id</a></li>
+      <li><a href="{%url 'administration:deleteselary' %}">employee selary id</a></li>
+	  <li><a href="{%url 'home:deleteiddata' %}">delete user id</a></li>
+    </ul>
+  </div><br>
+  
+  	  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">displaydata
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="{%url 'administration:studentfeesretrive' %}">student fees</a></li>
+      <li><a href="{%url 'administration:employeeselaryretrive' %}">employee selary</a></li>
+      <li><a href="{%url 'home:idformfetch' %}">idcard data</a></li>
+	  <li><a href="{%url 'employee:stprofilefetch' %}">student profilefetch</a></li>
+	  <li><a href="{%url 'student:sperformancefetch1' %}">student performancefetch</a></li>
+	  <li><a href="{%url 'administration:empprofilefetch' %}">employee profilefetch</a></li>
+    </ul>
+  </div>
+  </div>
+ <!-- new div for third framedesign--> 
+	  <center><h1>hello world</h1></center>
+	
+    <div class="col-sm-9">
+      <h4><small>RECENT POSTS-web field information</small></h4>
+      <hr>
+      <h2>welcome to RB software company-web development</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by rb maurya, novembar 10, 2020.</h5>
+      <h5><span class="label label-danger">web development</span> <span class="label label-primary">web designing</span></h5><br>
+      <p>in this company we are make a very responsive wev development web site because there are working best employee and heighly qualified teacher and develover </p>
+      <br><br>
+  </div>
+  
+      <div class="col-sm-9">
+      <h4><small>post-23/novembar/2020</small></h4>
+      <hr>
+      <h2>ploting working (jamin selling and buy)</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by rb maurya, novembar 10, 2020.</h5>
+      <h5><span class="label label-danger">web development</span> <span class="label label-primary">web designing</span></h5><br>
+      <p>in this company we are make a very responsive wev development web site because there are working best employee and heighly qualified teacher and develover </p>
+      <br><br>
+  </div>
+  
+      <div class="col-sm-9">
+      <h4><small>RECENT POSTS-web field information</small></h4>
+      <hr>
+      <h2>contraction working</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by rb maurya, novembar 10, 2020.</h5>
+      <h5><span class="label label-danger">web development</span> <span class="label label-primary">web designing</span></h5><br>
+      <p>in this company we are make a very responsive wev development web site because there are working best employee and heighly qualified teacher and develover </p>
+      <br><br>
+  </div>
+  
+      <div class="col-sm-9">
+      <h4><small>RECENT POSTS-software field </small></h4>
+      <hr>
+      <h2>welcome to RB software company-software development</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by rb maurya, novembar 10, 2020.</h5>
+      <h5><span class="label label-danger">software development</span> <span class="label label-primary">software front page designing</span></h5><br>
+      <p>in this company we are make a very responsive wev development web site because there are working best employee and heighly qualified teacher and develover </p>
+      <br><br>
+    </div>
+  
+</div>
+	
+	  
+</body>
+</html>

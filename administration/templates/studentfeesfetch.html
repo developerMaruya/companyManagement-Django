@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <title>all student fees list (in a list)</title>
+      <meta charset="UTF-8">
+	</head>
+	<body>
+	<table border=1 cellpadding=1 cellspacing=1 width=100%>
+	  <tr>
+	     <th>student id</th>
+		 <th>student name</th>
+		 <th>student address</th>
+		 <th>student course</th>
+		 <th>admition date</th>
+		 <th>total fees</th>
+		 <th>given fess</th>
+		 <th>remaning fees</th>
+		 <th>course duration</th>
+	   </tr>
+	  {% for x in feeslist %}
+	  <tr>
+	     <td>{{x.studid}}</td>
+		 <td>{{x.student_name}}
+		 <td>{{x.student_address}}</td>
+		 <td>{{x.student_course}}</td>
+		 <td>{{x.admision_date}}</td>
+		 <td>{{x.total_fees}}</td>
+		 <td>{{x.given_fees}}</td>
+		 <td>{{x.remaning_fees}}</td>
+		 <td>{{x.course_duration}}</td>
+	   </tr>
+	  {% endfor %}
+	</table>
+	</body>
+</html>

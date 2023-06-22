@@ -1,0 +1,23 @@
+/* import font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+/* header */
+header{
+	background-color:skyblue;
+}
+.header-links a{
+	font-size:0.9em;
+	text-decoration:none;
+	color:white;
+}
+/*navigation bar*/
+.navbar-nav{
+padding:0.8em 0em;
+}
+.navbar-nav .nav-link{
+	font-size:0.9em;
+	color:var(--light-gray)!important;
+}
+.navbar-nav .nav-item .nav-link{
+	padding:0 1.4em;
+}
